@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {PostService} from '../post.service';
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
+
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',

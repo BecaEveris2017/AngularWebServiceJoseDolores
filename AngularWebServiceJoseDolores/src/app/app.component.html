@@ -27,5 +27,31 @@
 <!--app-posts></app-posts-->
 <!--app-todos></app-todos-->
 
-<app-users></app-users>
-  
+<!--app-users></app-users-->
+<app-spinner [threshold]="2000" [template]="template" [loadingText]="'Please wait...'"></app-spinner>
+
+<tabs md-align-tabs=button>
+  <tab tabTitle="Albuns">
+    <app-albums></app-albums>
+
+  </tab>
+  <tab tabTitle="Comments">
+    <app-comments></app-comments>
+
+  </tab>
+  <tab tabTitle="Photos">
+    <app-photos></app-photos>
+
+  </tab>
+  <tab tabTitle="Posts">
+    <app-posts></app-posts>
+
+  </tab>
+  <tab tabTitle="Todos">
+    <app-todos></app-todos>
+  </tab>
+  <tab tabTitle="Users">
+    <app-users></app-users>
+  </tab>
+  <tabs>
+      <!--app-spinner> </app-spinner-->
